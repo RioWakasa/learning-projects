@@ -1,0 +1,70 @@
+body{
+  font-family: sans-serif;
+}
+
+.headerInner{
+  height:100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer{
+  background: #eeeeee;
+}
+
+.footerInner{
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.headerInner,.mainInner{
+  max-width: 650px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.keyVisual{
+  text-align: center;
+}
+
+.priceWrapper table,
+.priceWrapper th,
+.priceWrapper td{
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.priceWeapper th,
+.priceWeapper td{
+  padding: 7px;
+}
+
+.priceWrapper table{
+  width: 100%;
+}
+
+.priceWrapper th{
+  width: 150px;
+  background: #eee;
+}
+
+h2{
+  background-image: url(niconico_bg_blue.png);
+  line-height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.aboutWrapper img{
+  float: left;
+  margin-right: 10px;
+}

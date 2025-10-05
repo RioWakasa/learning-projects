@@ -1,0 +1,12 @@
+h1{
+  color:green;
+  font-size: 48px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+#logo{
+  color:red;
+}
+.red{
+  color:blue;
+}

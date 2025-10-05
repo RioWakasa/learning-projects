@@ -1,0 +1,13 @@
+{% extends './base.html' %}
+{% load bootstrap4 %} <!--bootstrapの利用宣言-->
+{% block content %}
+  <h1>{{ message }}</h1>
+
+  <form action="{% url 'bbs:create' %}" method="POST" class="form">
+  <!--method POST urlのか中に内包(隠されている) GET urlの後ろにつく-->
+  {% csrf_token %} <!--セキュリティー関連書かなきゃダメ-->
+  {% bootstrap_form articleForm layout='horizontal' %} <!--articleFormのキーを指定してviews.pyに繋いでいる-->
+  <button type='submit' class='btn btn-outline-primary'>作成する</button>
+  <a href='{% url "bbs:index" %}' class='btn btn-outline-secondary'>戻る</a>
+  </form>
+{% endblock %}

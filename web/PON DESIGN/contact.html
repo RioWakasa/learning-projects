@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <title>CONTACT | PON DESIGN</title>
+</head>
+<body class="subPage">
+  <header>
+    <div class="headerNav">
+      <p><img src="./images/logo.png" alt=""></p>
+      <nav>
+        <ul>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="works.html">WORKS</a></li>
+          <li><a href="company.html">COMPANY</a></li>
+          <li><a href="recruit.html">RECRUIT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>CONTACT<br><span>お問い合わせ</span></h1>
+  </header>
+  <section class="nav"><p><span>HOME</span> > CONTACT</p></section>
+  <main>
+    <section class="contactSec2">
+      <p class="contactText">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+      <div class="contactDiv">
+        <p>
+          <b>お問い合わせ種別</b> <span>*必須</span><br>
+          <input type="radio" name="otoiawase" value="1">お仕事のご依頼・ご相談
+          <input type="radio" name="otoiawase" value="2">お見積りのご依頼
+          <input type="radio" name="otoiawase" value="3">採用について
+          <input type="radio" name="otoiawase" value="4">その他
+        </p>
+        <!--name一緒にして択一にする valueの内容がプログラマに届く-->
+        <p>
+          <b>お名前</b> <span>*必須</span><br>
+          <input type="text" name="user_name">
+        </p>
+        <p>
+          <b>会社名</b><br>
+          <input type="text" name="companyName">
+        </p>
+        <p>
+          <b>メールアドレス</b> <span>*必須</span><br>
+          <input type="email" name="user_email">
+        </p>
+        <p>
+          <b>お電話番号</b> <span>(半角数字ハイフンなし)</span><br>
+          <input type="tel" name="user_phone">
+        </p>
+        <p>
+          <b>お問い合わせ内容</b> <span>*必須</span><br>
+          <input type="text" name="otoiawasecontent" class="otoiawase">
+        </p>
+        <p>
+          <b>PON DESIGNをどちらでお知りになりましたか？</b> <span>*必須</span><br>
+          <select name="">
+            <option value="" disabled selected style="display:none;">選択してください</option>
+            <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+            <option value="SNS">SNS</option>
+            <option value="ブログ">ブログ</option>
+            <option value="友人や知人">友人や知人</option>
+            <option value="その他">その他</option>
+          </select>
+        </p>
+        <p class="moreButton">
+          <input type="submit" value="送信する">
+        </p>
+      </div>
+</main>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="service.html">SERVICE</a></li>
+      <li><a href="works.html">WORKS</a></li>
+      <li><a href="company.html">COMPANY</a></li>
+      <li><a href="recruit.html">RECRUIT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <p><small>&copy;PON DESIGN</small></p>
+  <p><img src="./images/circle.png" alt=""></p>
+</footer>
+</body>
+</html>

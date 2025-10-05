@@ -1,0 +1,525 @@
+@charset "utf-8";
+  body {
+    font-family: Noto Serif JP;
+    font-family: Noto Serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .midashi,
+  .btn,
+  .contactSec p,
+  footer {
+    text-align: center;
+  }
+  .navi,
+  .navi nav ul,
+  .conceptSec div,
+  .worksSec .works,
+  .serviceSec .service {
+    display: flex;
+  }
+  header {
+    background: url(./img/fv-bgi_01@2x.jpg);
+    color: #fff;
+    padding: 25px 120px 175px 120px;
+  }
+  .navi input[type="checkbox"] {
+    display: none;
+  }
+  .navi {
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    background-color: #282F35;
+    padding: 30px 120px 30px 120px;
+    justify-content: space-between;
+    z-index: 99;
+  }
+  .navi p{
+    font-size: 26px;
+  }
+  .navi nav ul li {
+    margin: 0 32px 0 0;
+  }
+  header h1 {
+    font-size: 70px;
+    margin: 345px 0 55px 0;
+  }
+  header .headerText {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .conceptSec h2,
+  .serviceSec h2 {
+    color: #282F35;
+    font-size: 60px;
+  }
+  .title {
+    font-size: 90px;
+    opacity: 0.1;
+  }
+  .conceptSec {
+    width: 70%;
+    margin: 140px 120px 0 220px;
+  }
+  .conceptSec h2 {
+    display: flex;
+    align-items: center; /* 垂直中心 */
+  }
+  .conceptSec h2::after {
+    border-top: 5px solid;
+    content: "";
+    width: 3em; /* 線の長さ */
+    margin-left: .5em; /* 文字の左隣 */
+}
+  .conceptSec p {
+    color: #171717;
+  }
+  .conceptSec .midashi {
+    font-size: 40px;
+    margin: 90px 0 0 0;
+    line-height: 50px;
+  }
+  .conceptSec .conceptText {
+    width: 396px;
+    margin: 100px 143px 0 0;
+  }
+  .conceptSec img {
+    margin: 60px 100px 0 0;
+  }
+  .conceptSec .title {
+    text-align: right;
+    margin: 110px 0 0 0;
+  }
+  .worksSec {
+    background: url(./img/works-bgi@2x.jpg);
+    padding: 130px 120px 90px 120px;
+    margin: 100px 0 0 0;
+  }
+  .worksSec h2 {
+    text-align: right;
+    color: #fff;
+    font-size: 60px;
+    margin: 0 0 100px 0;
+    display: flex;
+    align-items: center; /* 垂直中心 */
+    justify-content: end;
+  }
+  .worksSec h2::after {
+    border-top: 5px solid;
+    content: "";
+    width: 3em; /* 線の長さ */
+    margin-left: .5em; /* 文字の左隣 */
+}
+  .worksSec .works {
+    margin: 0 100px 80px 100px;
+  }
+  .worksSec .works p {
+    margin: 0 20px 0 0;
+  }
+  .worksSec .works .worksText {
+    height: 17vh;
+    background-color: #fff;
+    color: #141414;
+    font-weight: normal;
+    padding: 20px 25px 25px 15px;
+  }
+  .worksSec .title {
+    margin: 124px 0 0 0;
+  }
+  .serviceSec {
+    position: relative;
+    margin: 135px 0 0 0;
+  }
+  .serviceSec h2 {
+    margin: 0 0 110px 220px;
+    display: flex;
+    align-items: center; /* 垂直中心 */
+  }
+  .serviceSec h2::after {
+    border-top: 5px solid;
+    content: "";
+    width: 3em; /* 線の長さ */
+    margin-left: .5em; /* 文字の左隣 */
+}
+  .serviceSec .service p {
+    font-size: 40px;
+    color: #fff;
+  }
+  .hearing {
+    background: url(./img/service-img01@2x.jpg) no-repeat;
+    text-align: center;
+    width: 480px;
+    padding: 120px 0 120px 0;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition:0.5s;
+    transition:0.5s;
+  }
+  .hearing:hover {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .planning {
+    background: url(./img/service-img02@2x.jpg) no-repeat;
+    text-align: center;
+    width: 480px;
+    padding: 120px 0 120px 0;
+    padding: 120px 0 120px 0;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition:0.5s;
+    transition:0.5s;
+  }
+  .planning:hover {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .direction {
+    background: url(./img/sevice-img03@2x.jpg) no-repeat;
+    text-align: center;
+    width: 480px;
+    padding: 120px 0 120px 0;
+    padding: 120px 0 120px 0;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition:0.5s;
+    transition:0.5s;
+  }
+  .direction:hover {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .serviceSec .title {
+    text-align: right;
+    margin: 125px 120px 0 0;
+  }
+  .contactSec {
+    background: url(./img/contact-bgi@2x.jpg);
+    color: #fff;
+    padding: 135px 120px 120px 120px;
+    margin: 95px 0 0 0;
+  }
+  .contactSec h2 {
+    text-align: right;
+    font-size: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center; /* 垂直中心 */
+    justify-content: end;
+  }
+  .contactSec h2::after {
+    border-top: 5px solid;
+    content: "";
+    width: 3em; /* 線の長さ */
+    margin-left: .5em; /* 文字の左隣 */
+}
+  .contactSec .contactText {
+    margin: 110px 0 40px 0;
+  }
+  .contactSec .title {
+    text-align: left;
+    margin: 105px 0 0 0;
+  }
+  .btn {
+    display: block;
+    background-color: #F7D43F;
+    color: #171717;
+    border: #707070;
+    border-radius: 50px;
+    width: 235px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  footer {
+    color: #282F35;
+    padding: 30px 0;
+  }
+  .contactPage header{
+    background: url(./img/contact-page-bgi@2x.jpg);
+    padding: 25px 120px 105px 120px;
+  }
+  .contactPage header h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 140px 0 80px 0;
+  }
+  .contactPage section{
+    width: 50%;
+    margin: 100px auto 80px auto;
+  }
+  .contactPage section .text {
+    margin: 25px 0 0 0;
+  }
+  .contactPage .btn {
+    margin: 80px auto 0 auto;
+  }
+  input[type="checkbox"] {
+    margin: 0 10px 0 0;
+  }
+  input[name="call"],
+  input[name="otoiawase"] {
+    margin: 0 10px 0 20px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    border: solid 1px #141414;
+    background: #fff;
+    width: 100%;
+  }
+  input[name="otoiawasecontent"] {
+    padding: 0 0 360px 0;
+  }
+  @media screen and (max-width:640px) {
+    .navi,
+    .navi nav ul,
+    .conceptSec div,
+    .worksSec .works,
+    .serviceSec .service {
+      display: block;
+    }
+    .navi {
+    padding: 32px 15px;
+    }
+    .navi nav ul li {
+      margin: 0 0 0 0;
+    }
+    header {
+      background-position: center;
+      padding: 35px 15px 210px 15px;
+    }
+    header h1 {
+      font-size: 37px;
+      margin: 140px 0 60px 0;
+    }
+    header .headerText {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 30px;
+    }
+    .conceptSec h2,
+    .serviceSec h2 {
+      color: #282F35;
+      font-size: 30px;
+    }
+    .title {
+      font-size: 40px;
+    }
+    .conceptSec {
+      width: 90%;
+      margin: 120px auto 0 auto;
+    }
+    .conceptSec .midashi {
+      font-size: 20px;
+      margin: 55px 0 35px 0;
+      line-height: 30px;
+    }
+    .conceptSec .conceptText {
+      width: 100%;
+      margin: 0;
+    }
+    .conceptSec img {
+      max-width: 100%;
+      margin: 30px 0 60px 0;
+    }
+    .conceptSec .title {
+      margin: 0;
+    }
+    .worksSec {
+      background-position: center top;
+      padding: 120px 15px 45px 15px;
+      margin: 35px 0 0 0;
+    }
+    .worksSec h2 {
+      font-size: 30px;
+    }
+    .worksSec .works {
+      margin: 0 12px 0 13px;
+    }
+    .worksSec .works div {
+      margin: 0 0 30px 0;
+    }
+    .worksSec .works p {
+      margin: 0 0 0 0;
+    }
+    .worksSec .works .worksText {
+      height: 20vh;
+    }
+    .worksSec .works p img {
+      width: 100%;
+    }
+    .worksSec .btn {
+      margin: 80px auto 0 auto;
+    }
+    .worksSec .title {
+      margin: 60px 0 0 0;
+    }
+    .serviceSec h2 {
+      margin: 0 0 80px 15px;
+    }
+    .serviceSec .service p {
+      font-size: 20px;
+    }
+    .serviceSec .service p img {
+      max-width: 100%;
+    }
+    .hearing {
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
+    .planning {
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
+    .direction {
+      width: 100%;
+    }
+    .serviceSec .title {
+      margin: 60px 20px 0 0;
+    }
+    .contactSec {
+      background-position: center;
+      padding: 115px 15px 75px 15px;
+      margin: 55px 0 0 0;
+    }
+    .contactSec h2 {
+      font-size: 30px;
+    }
+    .contactSec .title {
+      margin: 40px 0 0 0;
+    }
+    .contactPage header{
+      background-position: center;
+      padding: 32px 15px 70px 15px;
+    }
+    .contactPage header h1 {
+      text-align: center;
+      font-size: 30px;
+      margin: 110px 0 40px 0;
+    }
+    .contactPage section{
+      width: 92%;
+    }
+    .contactPage section .text {
+      margin: 25px 0 0 0;
+    }
+    .check_lb {
+      display: block;
+    }
+    input[type="checkbox"] {
+      margin: 0 10px 0 0;
+    }
+    input[name="otoiawase"] {
+      margin: 0 10px 0 0;
+    }
+    input[name="otoiawasecontent"] {
+      padding: 0 0 139px 0;
+    }
+    .gMenu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 99;
+    }
+    /* メニューアイコンを画面右上に固定しています */
+    .gMenu .menu-icon {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 12px;
+      padding-top: 5px;
+      height: 12px;
+    }
+    /* メニューアイコン（三本線）の真ん中の線です */
+    .gMenu .menu-icon .navicon {
+      background: #ffc107; /* 色は自由に変更可能です */
+      display: block;
+      height: 2px; /* 太さ */
+      width: 31px; /* 長さ */
+      position: relative;
+      transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+    }
+    /* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+    .gMenu .menu-icon .navicon::before,
+    .gMenu .menu-icon .navicon::after {
+      background: #ffc107; /* 色は自由に変更可能です */
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+      width: 100%;
+    }
+    .gMenu .menu-icon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+    .gMenu .menu-icon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+    /* 表示されるメニューです */
+    .gMenu .menu {
+      background-color: #282F35;
+      overflow: hidden;
+      max-height: 0; /* ★最初は高さを0にして非表示状態に */
+      transition: max-height .6s; /* 表示されるときのアニメーション */
+      text-align: center;
+    }
+    /* メニュー部分のデザインです */
+    .gMenu .menu li:first-of-type {
+      padding-top: 25px;
+      padding-top: 25vh;
+    }
+    .gMenu .menu li a {
+      display: block;
+      padding: 24px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .gMenu .menu li a:hover {
+      background-color: #f4f4f4;
+    }
+    /* チェックボックスは常に非表示です */
+    .gMenu .menu-btn {
+      display: none;
+    }
+    /* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+    .gMenu .menu-btn:checked ~ .menu {
+      max-height: 100vh; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+      height: 100vh;
+      transition: max-height .6s;
+    }
+    /* メニューボタンの中央の線を非表示に */
+    .gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+    
+    /* メニューボタンの上下の線を45度傾けて✕印を作ります */
+    .gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+    .gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+    /* サイトに合わせてオリジナルカスタマイズ */
+    .gMenu .menu-icon {
+      top: 45px;
+      right: 15px;
+    }
+    .gMenu .menu-icon .navicon,
+    .gMenu .menu-icon .navicon::before,
+    .gMenu .menu-icon .navicon::after {
+      background: #fff;
+    }
+  }

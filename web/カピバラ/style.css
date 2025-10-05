@@ -1,0 +1,628 @@
+ @charset "utf-8";
+ body {
+   font-family: "源ノ角ゴシック JP";
+   font-size: 17px;
+   line-height: 32px;
+   text-align: left;
+ }
+ h1,
+ h2 {
+   font-family: "Caveat";
+ }
+ header {
+   background-color: #00978C;
+   margin-bottom: 400px;
+ }
+ header .Div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center
+ }
+ header input,
+ header label {
+   display: none;
+ }
+ header .capybaraLogo {
+   padding-top: 12px;
+   margin-left: 5%;
+   padding-bottom: 12px;
+ }
+ header .Div div {
+   flex-basis: 54%;
+   display: flex;
+   justify-content: space-between;
+ }
+ header ul {
+   display: flex;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: medium;
+   margin-top: 10px;
+ }
+ header ul li {
+   margin: 0 10%;
+ }
+ header ul li a {
+   text-decoration: none;
+ }
+ header ul li a:hover {
+  text-decoration: underline;
+ }
+ header .mail {
+   position: relative;
+   display: block;
+   border-radius: 5px;
+   font-size: 20px;
+   font: medium;
+   background: #ffffff;
+   color: #00978C;
+   margin-right: 3%;
+   padding: 10px 6% 10px 2%;
+   text-decoration: none;
+ }
+ header .mail:hover {
+   background: #D5F0EE;
+ }
+ header .mail::after {
+   content: url(./images/Icon_mail.png);
+   margin-left: 2px;
+   position: absolute;
+   right: 10px;
+   top: 15px;
+ }
+ header h1 {
+   text-align: center;
+   background: url(./images/capybara.jpg) no-repeat center/cover;
+   font-size: 111px;
+   font-weight: bold;
+   line-height: 115px;
+   color: #ffffff;
+   padding-top: 150px;
+   padding-bottom: 480px;
+   margin-bottom: -440px;
+ }
+ header .h1 {
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   color: #ffffff;
+   margin-bottom: 100px;
+ }
+ header div {
+   display: flex;
+   justify-content: center;
+ }
+ header div .ijuuInfo a {
+   display: block;
+   background-color: #4FC98C;
+   color: #ffffff;
+   border-radius: 50px;
+   padding: 20px 120px 20px 120px;
+   text-decoration: none;
+   margin-right: 10px;
+ }
+ header div .ijuuInfo a:hover {
+   background: #54DE99;
+ }
+ header div .kankouInfo a {
+   display: block;
+   background-color: #6ACED6;
+   color: #ffffff;
+   border-radius: 50px;
+   padding: 20px 120px 20px 120px;
+   text-decoration: none;
+   margin-left: 10px;
+ }
+ .kankouInfo a:hover {
+   background: #8ADAE0;
+ }
+ main {
+   text-align: left;
+ }
+ .aboutSec,
+ .pointSec,
+ .msgSec,
+ .infoSec .infoDiv {
+   max-width: 1240px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .aboutSec div h2,
+ .pointSec div h2,
+ .msgSec div h2 {
+   font-size: 46px;
+ }
+ .aboutSec div h2 span,
+ .pointSec div h2 span,
+ .msgSec div h2 span {
+   font-size: 104px;
+   color: #4FC98C;
+ }
+ .aboutSec div .h2,
+ .pointSec div .h2,
+ .msgSec div .h2 {
+   font-size: 22px;
+ }
+ .pointSec div h2 span,
+ .infoSec h2 span {
+   color: #6ACED6;
+ }
+ .aboutSec {
+   display: flex;
+   margin-bottom: 140px;
+ }
+ .aboutSec div h2 {
+   line-height: 70px;
+ }
+ .aboutSec div .h2 {
+   margin-bottom: 30px
+ }
+ .aboutSec div p {
+   margin-bottom: 20px;
+ }
+ .aboutSec div p a {
+   display: block;
+   background-color: #4FC98C;
+   color: #ffffff;
+   border-radius: 40px;
+   margin-right: 275px;
+   padding: 10px 80px 10px 80px;
+   text-decoration: none;
+ }
+ .aboutSec div p a:hover {
+   background: #54DE99;
+ }
+ .aboutSec .aboutImg {
+   margin-top: 80px;
+   margin-left: 58px;
+ }
+ .pointSec {
+  display: flex;
+  margin-bottom: 140px;
+ }
+ .pointSec .pointImg {
+   margin-top: 80px;
+   margin-right: 58px;
+ }
+ .pointSec h2 {
+   line-height: 70px;
+ }
+ .pointSec div .h2 {
+   margin-bottom: 20px;
+ }
+ .pointSec p {
+   margin-bottom: 20px;
+ }
+ .pointSec p a {
+   display: block;
+   background-color: #6ACED6;
+   color: #ffffff;
+   border-radius: 40px;
+   margin-right: 275px;
+   padding: 10px 80px 10px 80px;
+   text-decoration: none;
+ }
+ .pointSec p a:hover {
+   background: #8ADAE0;
+ }
+ .msgSec {
+   display: flex;
+   margin-bottom: 140px;
+ }
+ .msgSec div h2 {
+   line-height: 70px;
+ }
+ .msgSec div h2 {
+   margin-bottom: 20px;
+ }
+ .msgSec div .msg1 {
+   margin-bottom: 20px;
+ }
+ .msgSec div .msg2 {
+   margin-bottom: 20px;
+ }
+ .msgSec .msgImg {
+   margin-top: 70px;
+   margin-left: 58px;
+ }
+ .gallerySec h2,
+ .mailSec h2 {
+   display: none;
+ }
+ .gallerySec p {
+   margin-left: 0;
+   margin-right: 0;
+ }
+ .gallerySec p img {
+   width: 100%;
+ }
+ .infoSec {
+   background: url(./images/bg_gallery.jpg);
+   padding-top: 140px;
+   padding-bottom: 140px;
+ }
+ .infoSec h2 {
+   text-align: center;
+   font-size: 22px;
+ }
+ .infoSec h2 span {
+   font-size: 104px;
+ }
+ .infoSec h2 b {
+   font-weight: bold;
+ }
+ .infoSec .Div {
+   display: flex;
+ }
+ .infoSec .Div div h3 {
+   font-size: 30px;
+   font-weight: bold;
+ }
+ .infoSec .Div div p {
+   font-size: 20px;
+ }
+ .infoSec .Div .infoDiv1 {
+   margin-right: 10px;
+ }
+ .infoSec .Div .infoDiv2 {
+   margin-left: 10px;
+ }
+ .infoSec .infoDiv1,
+ .infoSec .infoDiv2 {
+   margin-top: 80px;
+   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+   background: #FFFFFF 0% 0% no-repeat padding-box;
+   box-shadow: 0px 3px 6px #00000029;
+   padding-bottom: 40px;
+ }
+ .infoSec .Div .infoDiv1 h3,
+ .infoSec .Div .infoDiv2 h3 {
+   margin: 40px 10px 20px 35px;
+ }
+ .infoSec .Div .infoDiv1 .info,
+ .infoSec .Div .infoDiv2 .info {
+   margin: 0 55px 20px 35px;
+ }
+ .infoSec .infoDiv1 p a {
+   display: block;
+   background-color: #4FC98C;
+   color: #ffffff;
+   font-size: 24px;
+   font-weight: bold;
+   margin: 0 160px 0 130px;
+   padding: 20px 50px 20px 75px;
+   box-shadow: 0px 6px 0px #41AA76;
+   border-radius: 4px;
+   text-decoration: none;
+ }
+ .infoSec .infoDiv1 p a:hover {
+  background: #54DE99;
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-property: background,box-shadow,transform;
+  transition-duration: 150ms;
+  transition-delay: 300ms;
+  transition-timing-function: linear;
+}
+.infoSec .infoDiv2 p a {
+ display: block;
+  background-color: #6ACED6;
+  color: #ffffff;
+  font-size: 24px;
+ font-weight: bold;
+  margin: 0 160px 0 130px;
+  padding: 20px 50px 20px 75px;
+  box-shadow: 0px 6px 0px #45989F;
+  border-radius: 4px;
+  text-decoration: none;
+ }
+ .infoSec .infoDiv2 p a:hover {
+   background: #8ADAE0;
+   transform: translateY(5px);
+   transition-property: background,transform;
+   transition-duration: 300ms;
+   transition-timing-function: linear;
+ }
+  .infoSec .infoDiv2 p a:hover {
+   box-shadow: none;
+   transform: translateY(5px);
+   transition-property: box-shadow,transform;
+   transition-duration: 150ms;
+   transition-delay: 300ms;
+   transition-timing-function: linear;
+ }
+ .mailSec {
+   text-align: center;
+   background: url(./images/mail.jpg) no-repeat center/cover;
+   padding-top: 150px;
+   padding-bottom: 100px;
+ }
+ .mailSec p {
+   font-size: 20px;
+   color: #ffffff;
+   margin-bottom: 30px;
+ }
+ .mailSec .mailText {
+   font-size: 48px;
+   font-weight: bold;
+ }
+ .mailSec div {
+   display: flex;
+   justify-content: center;
+ }
+ .mailSec div .email {
+   flex-basis: 25%;
+   margin-right: 30px;
+ }
+ .mailSec input[type=email] {
+   border: 1px solid #ccc;
+   background-color: #ffffff;
+   width: 100%;
+   font-size: 8px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   color: #ccc;
+ }
+ .mailSec input[type=submit] {
+   background-color: #4FC98C;
+   color: #ffffff;
+   padding: 10px 30px 10px 30px;
+   display: block;
+ }
+ .mailSec input[type=submit]:hover {
+   background: #54DE99;
+ }
+ footer {
+   position: relative;
+   background-color: #222748;
+   color: #ffffff;
+   text-align: center;
+   padding-top: 28px;
+   padding-bottom: 28px;
+ }
+ footer .toTop {
+   position: absolute;
+   right: 40px;
+   bottom: 0;
+   display: block;
+ }
+ footer .toTop img:hover{
+   filter: brightness(105%);
+ }
+
+ @media screen and (max-width:640px) {
+   header .Div,
+   header .Div div,
+   header div,
+   header ul,
+   .aboutSec,
+   .pointSec,
+   .msgSec,
+   .infoSec .Div,
+   .mailSec div {
+     display: block;
+   }
+   img {
+     max-width: 100%;
+   }
+   header {
+     margin-bottom: 80px;
+     padding-top: 10px;
+   }
+   header .capybaraLogo {
+     margin-top: 0;
+   }
+   header h1 {
+     font-size: 50px;
+     line-height: 51px;
+     background: url(./images/sp_bg.jpg) no-repeat center/cover;
+     padding-top: 400px;
+     padding-bottom: 350px;
+     margin-bottom: -340px;
+   }
+   header .h1 {
+     font-size: 15px;
+     margin-bottom: 0;
+   }
+   header .mail {
+     display: none;
+   }
+   header div .ijuuInfo,
+   header div .kankouInfo {
+     width: 80%;
+     margin-left: 10%;
+     margin-bottom: 20px;
+     padding: 20px 0 20px 0;
+     font-size: 15px;
+   }
+   header div .ijuuInfo a {
+     margin-right: 0;
+     padding: 20px 100px 20px 110px;
+   }
+   header div .kankouInfo a {
+     margin-left: 0;
+     padding: 20px 100px 20px 110px;
+   }
+   .aboutSec {
+     margin-bottom: 200px;
+   }
+   .aboutSec div p {
+     margin-bottom: 0px;
+   }
+   .aboutSec div p a,
+   .pointSec p a {
+     width: 80%;
+     margin-left: 10%;
+     padding: 20px 0 20px 125px;
+     font-size: 15px;
+     margin-top: 300px;
+   }
+   .aboutSec .aboutImg {
+     margin-left: 0;
+     margin-top: -350px;
+   }
+   .aboutSec,
+   .pointSec,
+   .msgSec,
+   .infoSec .infoDiv {
+     width: 90%;
+   }
+   .pointSec {
+     margin-bottom: 50px;
+   }
+   .pointSec .pointImg{
+     margin-right: 0;
+     margin-top: 700px;
+   }
+   .pointSec div {
+     margin-top: -800px;
+   }
+   .pointSec p a {
+     margin-bottom: 0;
+   }
+   .msgSec {
+     margin-bottom: 100px;
+   }
+   .msgSec .msgImg {
+     margin-left: 0;
+   }
+   .infoSec {
+     background: url(./images/bg_gallery@sp.jpg) no-repeat center/coverz;
+     padding-top: 60px;
+     padding-bottom: 100px;
+   }
+   .infoSec h2 span {
+     font-size: 66px;
+   }
+   .infoSec h2 b {
+     font-size: 14px;
+   }
+   .infoSec .Div div h3 {
+     font-size: 16px;
+   }
+   .infoSec .Div .infoDiv1 {
+     margin-right: 0;
+   }
+   .infoSec .infoDiv1 {
+     margin-top: 55px;
+   }
+   .infoSec .Div .infoDiv2 {
+     margin-left: 0;
+   }
+   .infoSec .Div div .info {
+     font-size: 13px;
+   }
+   .infoSec .infoDiv1 p a,
+   .infoSec .infoDiv2 p a {
+     font-size: 15px;
+     margin: 0 90px 0 85px;
+     padding: 10px 40px 10px 40px;
+   }
+   .mailSec p {
+     font-size: 13px;
+   }
+   .mailSec .mailText {
+     font-size: 25px;
+   }
+   .mailSec div .email {
+     margin-right: 0;
+   }
+   .mailSec input[type=email] {
+     width: 90%;
+   }
+   .mailSec input[type=submit] {
+     margin-left: 30%;
+     padding: 10px 50px 10px 50px;
+   }
+   .gMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  footer {
+    text-align: left;
+    padding-left: 20px;
+  }
+  footer .toTop {
+    right: 20px;
+  }
+  /* メニューアイコンを画面右上に固定しています */
+  .gMenu .menu-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    padding-top: 5px;
+    height: 12px;
+  }
+  /* メニューアイコン（三本線）の真ん中の線です */
+  .gMenu .menu-icon .navicon {
+    background: #ffc107; /* 色は自由に変更可能です */
+    display: block;
+    height: 2px; /* 太さ */
+    width: 31px; /* 長さ */
+    position: relative;
+    transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+  }
+  /* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+  .gMenu .menu-icon .navicon::before,
+  .gMenu .menu-icon .navicon::after {
+    background: #ffc107; /* 色は自由に変更可能です */
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+    width: 100%;
+  }
+  .gMenu .menu-icon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+  .gMenu .menu-icon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+  /* 表示されるメニューです */
+  .gMenu .menu {
+    background-color: rgba(255,255,255,0.9);
+    overflow: hidden;
+    max-height: 0; /* ★最初は高さを0にして非表示状態に */
+    transition: max-height .6s; /* 表示されるときのアニメーション */
+    text-align: center;
+  }
+  /* メニュー部分のデザインです */
+  .gMenu .menu li:first-of-type {
+    padding-top: 25px;
+    padding-top: 50px;
+  }
+  .gMenu .menu li a {
+    display: block;
+    padding: 24px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .gMenu .menu li a:hover {
+    background-color: #f4f4f4;
+  }
+  /* チェックボックスは常に非表示です */
+  .gMenu .menu-btn {
+    display: none;
+  }
+  /* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+  .gMenu .menu-btn:checked ~ .menu {
+    max-height: 338px; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+    transition: max-height .6s;
+  }
+  /* メニューボタンの中央の線を非表示に */
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+  
+  /* メニューボタンの上下の線を45度傾けて✕印を作ります */
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+  /* サイトに合わせてオリジナルカスタマイズ */
+  .gMenu .menu-icon {
+    top: 26px;
+  }
+  .gMenu .menu-icon .navicon,
+  .gMenu .menu-icon .navicon::before,
+  .gMenu .menu-icon .navicon::after {
+    background: #333333;
+  }
+ }

@@ -1,0 +1,487 @@
+@charset "utf-8";
+body {
+  font-family: "ヒラギノ角ゴシック";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+}
+header,
+h2,
+.newsSec p,
+.service,
+.moreButton,
+footer,
+.subPage main {
+  font-family: "Montserrat";
+}
+header,
+h2,
+.newsSec .newsDiv .news,
+.serviceSec .serviceDiv .service
+.moreButton,
+.footer nav ul li {
+  font-weight: bold;
+}
+h2 span,
+.headerH1 span,
+.companySec .company {
+  font-weight: 600;
+}
+header {
+  background: url(./images/hero.png);
+  color: #fff;
+  padding: 30px 20px 0 30px;
+}
+header,
+.news,
+.worksSec,
+.companySec,
+.companySec2 h2,
+.recruitSec2 h2,
+.recruitSec,
+.contactSec,
+.contactSec2,
+footer {
+  text-align: center;
+}
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  font-size: 14px;
+}
+header nav ul li {
+  padding: 5px 15px 10px 15px;
+}
+header nav ul li a {
+  position: relative;
+}
+header nav ul li a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    bottom: -1px;               /*アンダーラインがaタグの下端から現れる*/
+    transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+    transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+    transition: transform 0.3s; /*変形の時間*/
+}
+header nav ul li a:hover::after {
+  transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+h1 {
+  font-size: 72px;
+}
+.headerH1 {
+  margin: 200px 0 0 0;
+  line-height: 60px;
+}
+.headerH1 span{
+  font-family: "ヒラギノ角ゴシック";
+  font-size: 24px;
+}
+header .button {
+  display: block;
+  border: #fff solid 1px;
+  border-radius: 30px;
+  width: 220px;
+  line-height: 20px;
+  margin: 25px auto 0 auto;
+  padding: 18px 0 18px 0;
+}
+.scroll {
+  font-size: 12px;
+  margin: 110px 0 0 auto;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.scrollBar {
+  width: 1px;
+  margin: 0 12px 0 auto;
+}
+h2 {
+  font-size: 36px;
+  line-height: 25px;
+  color: #391E88;
+}
+h2 span {
+  font-size: 13px;
+}
+.worksSec h2,
+.recruitSec h2,
+.contactSec h2 {
+  margin: 0 0 20px 0;
+}
+.moreButton {
+  display: block;
+  text-align: center;
+  background: linear-gradient(to right,#7633A4 0%,#250D65 100%);
+  color: #fff;
+  font-size: 14px;
+  width: 200px;
+  border-radius: 30px;
+  margin: 30px auto 0 auto;
+  padding: 16px 0 16px 0;
+}
+.newsSec {
+  display: flex;
+  width: 60%;
+  margin: 80px auto 0 auto;
+}
+.newsSec h2 {
+  flex-basis: 20%;
+}
+.newsDiv {
+  display: flex;
+}
+.news {
+  background: #E8E8E8;
+  width: 95px;
+  font-size: 12px;
+  border-radius: 30px;
+  padding: 0 20px;
+}
+.newsDiv p {
+  margin: 0 10px 10px 0;
+}
+.newsDiv div .news {
+  background: #E8E8E8;
+}
+.newsDiv .newsText {
+    font-family: "ヒラギノ角ゴシック";
+    flex-basis: 80%;
+}
+.serviceSec {
+  width: 80%;
+  margin: 120px auto 0 auto;
+}
+.serviceSec h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.serviceDiv {
+  display: flex;
+}
+.serviceDiv div {
+  margin: 0 50px 0 0;
+}
+.service {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.serviceText {
+  margin: 20px 0 0 0;
+}
+.topPage .worksSec {
+  display: flex;
+  background: linear-gradient(90deg,#fff 0%,#fff 430px,#F7F7F7 100px,#F7F7F7 100%);
+  width: 90%;
+  margin: 120px auto 0 auto;
+}
+.worksSec p img {
+  margin: 50px 0 50px 0;
+}
+.topPage .worksSec div {
+  padding: 100px 100px 100px 100px;
+}
+.companySec {
+  background: url(./images/bg-face.png),url(./images/bg-circle.png);
+  background-repeat: no-repeat,no-repeat;
+  background-position: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 220px 0 220px 0;
+}
+.companySec .company {
+  font-size: 40px;
+  text-decoration: underline #F5F534;
+  line-height: 100px;
+}
+.topPage .recruitSec {
+  display: flex;
+  background: #F7F7F7;
+  width: 80%;
+  margin: 0 auto;
+}
+.recruitSec div {
+  flex-basis: 43%;
+  padding: 80px 0 0 0;
+}
+.contactSec {
+  background: #F7F7F7;
+  margin: 120px 0 0 0;
+  padding: 120px 0 80px 0;
+}
+footer {
+  position: relative;
+  background: #120E19;
+  padding: 50px 0 50px 0;
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+footer nav ul li {
+  padding: 0 20px 0 0;
+}
+footer p {
+  color: #A798B7;
+}
+footer p img {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+.subPage header {
+  padding: 30px 20px 50px 30px;
+}
+.subPage .nav {
+  background: #F7F7F7;  
+  padding: 10px 0 10px 150px;
+}
+.subPage .nav span {
+  color: #C1AFDE;
+}
+.subPage h1 {
+  font-size: 36px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+.subPage h1 span {
+  font-size: 14px;
+}
+.subPage .newsSec2 nav {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 20px auto 80px auto;
+}
+.page1,
+.page2,
+.page3 {
+  margin: 0 5px 0 5px;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+}
+.subPage .newsSec2 nav .page1 {
+  color: #4F31A5;
+  background: #F1EBF8;
+}
+.subPage .newsSec2 nav .page2,
+.subPage .newsSec2 nav .page3 {
+  color: #fff;
+  background: linear-gradient(#7633A4 0%,#250D65 100%);
+}
+.subPage .serviceSec .service {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto 50px auto;
+}
+.subPage .serviceSec .service p {
+  flex-basis: 40%;
+}
+.subPage .serviceSec .service div {
+  flex-basis: 50%;
+}
+.subPage .serviceSec h2 {
+  text-align: left;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+.subPage .serviceSec .serviceText {
+  font-size: 15px;
+  text-align: left;
+  margin-top: 0;
+}
+.subPage .worksSec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.subPage .worksSec p img {
+  margin-bottom: 0;
+}
+.subPage .worksSec::after{
+  content:"";
+  display: block;
+  width:30%;
+}
+.subPage .companySec {
+  background: url(./images/bg-circle.png) no-repeat center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 100px 0;
+}
+.subPage .companySec .companyText {
+  background: url(./images/bg-face.png) no-repeat center/contain;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 220px 0;
+}
+.subPage .companySec .companyText div {
+  padding: 150px 0 0 0;
+}
+.subPage .companySec .CEO {
+  display: flex;
+  justify-content: space-between;
+}
+.subPage .companySec2 h2 {
+  margin: 0 0 30px 0;
+}
+.subPage .companySec2 dt {
+  flex-basis: 20%;
+  padding: 30px 0 30px 50px;
+}
+.subPage .companySec2 dd {
+  padding: 30px 0 0 0;
+}
+.subPage .companySec2 dt,
+.subPage .companySec2 dd {
+  border-bottom:1px solid #666;
+  width: 1000px;
+}
+.companySec2,
+.recruitSec2 {
+  width: 80%;
+  margin: 0 auto;
+}
+.companySec2 dl div {
+  display: flex;
+} 
+.subPage .companySec2 iframe {
+  width: 100%;
+  margin: 50px auto 10px auto;
+}
+.subPage .recruitDiv {
+  background: url(./images/リピートグリッド\ 8.png);
+}
+.subPage .recruitSec {
+  padding: 100px 0 0 0;
+}
+.subPage .recruitSec h2 {
+  font-size: 72px;
+  line-height: 75px;
+}
+.subPage .recruitSec h2 span {
+  font-size: 32px;
+  font-weight: 300;
+}
+.subPage .recruitSec p img {
+  width: 100%;
+  margin: 70px 0 70px 0;
+}
+.recruitSec2 dl div {
+  display: flex;
+  justify-content: flex-start;
+}
+.subPage .recruitDiv2 .contactSec {
+  margin: 0 0 0 0;
+}
+.subPage .recruitSec2 .recruitType {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 50px 50px 50px 50px;
+}
+.subPage .recruitSec2 h2 {
+  margin: 0 0 50px 0;
+}
+.subPage .recruitSec2 h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.subPage .recruitSec2 dt {
+  flex-basis: 20%;
+  padding: 30px 0 30px 50px;
+}
+.subPage .recruitSec2 dd {
+  padding: 30px 0 0 0;
+}
+.subPage .recruitSec2 dt,
+.subPage .recruitSec2 dd {
+  border-bottom: 1px solid #ccc;
+  width: 1000px;
+}
+.subPage .recruitSec2 ul {
+  padding: 0 0 100px 0;
+}
+.subPage .recruitSec2 .kyuujin {
+  text-align: center;
+  font-size: 12px;
+}
+.subPage .recruitMovie {
+  text-align: center;
+  padding: 100px 0 80px 0;
+}
+.subPage .recruitMovie h2 {
+  margin: 0 0 50px 0;
+}
+.subPage .contactText {
+  margin: 70px 0 0 0;
+}
+.subPage .contactSec2 .contactDiv {
+  background: #F7F7F7;
+  text-align: left;
+  width: 80%;
+  padding: 50px 0 50px 50px;
+  margin: 50px auto 70px auto;
+}
+.subPage .contactSec2 .contactDiv span {
+  color: #391E88;
+  font-size: 12px;
+  font-weight: 600;
+}
+.subPage .contactSec2 .contactDiv b {
+  font-size: 16px;
+  font-weight: 600;
+}
+.subPage .contactSec2 .contactDiv p {
+  margin: 0 0 20px 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  border: solid 1px #AAAAAA;
+  border-radius: 5px;
+  background: #fff;
+}
+input[type="text"],
+input[type="email"]
+ {
+  padding: 5px 100px 5px 0;
+}
+input[type="tel"] {
+  padding: 5px 0 5px 0;
+}
+select {
+  padding: 5px 110px 5px 20px;
+}
+.subPage .contactSec2 .contactDiv .moreButton {
+  margin: 50px auto 60px auto;
+}
+
+@media screen and (max-width:640px) {
+  .newsSec,
+  .newsDiv,
+  .serviceDiv,
+  .topPage .recruitSec,
+  .subPage .serviceSec .service,
+  .subPage .worksSec,
+  .subPage .companySec .CEO,
+  .companySec2 dl div {
+    display: block;
+  }
+}

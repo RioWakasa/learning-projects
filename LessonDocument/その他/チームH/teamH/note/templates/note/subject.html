@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+{% block content %}
+  <main>
+    <h1>ITパスポート</h1>
+    <ul>
+      {% for document in documents %}
+        <li><a href="">{{ document.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </main>
+{% endblock %}

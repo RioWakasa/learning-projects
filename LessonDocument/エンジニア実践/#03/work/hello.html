@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>HTML</title>
+  <style type="text/css">
+    h1 { color: #f4005f; }
+    p { font-weight: bold; }
+  </style>
+  <script>
+    function clickHandler(e) {
+      const box = document.getElementById("box");
+      const p = document.createElement("p");
+      p.innerText = "Added by JS";
+      box.appendChild(p);
+    }
+  </script>
+</head>
+<body>
+  <h1>Hello HTML</h1>
+  <p>
+    My first
+    <a href="">
+      HTML
+    </a>
+  </p>
+  <button onclick="clickHandler()">JS</button>
+  <div id="box"></div>
+</body>
+</html>

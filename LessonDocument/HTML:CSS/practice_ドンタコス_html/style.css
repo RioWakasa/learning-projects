@@ -1,0 +1,619 @@
+ @charset "utf-8";
+ body {
+   background: #ac1705 url(images/bk_triangle@2x.png) no-repeat center top/contain;
+ }
+ header {
+   position: relative;
+ }
+ h1 {
+   margin-top: 40px;
+   margin-bottom: 40px;
+ }
+ h1 img {
+   display: block;
+   margin: 0 auto;
+ }
+ header .koikeyaLogo {
+   position: absolute;
+   left: 125px;
+   top: 10px;
+ } 
+ @keyframes hatAnimation {
+   0% {
+     transform: rotate(0deg);
+     transform-origin: bottom;
+   }
+   25% {
+     transform: rotate(10deg);
+     transform-origin: bottom;
+   }
+   50% {
+     transform: rotate(0deg);
+     transform-origin: bottom;
+   }
+   75% {
+     transform: rotate(-10deg);
+     transform-origin: bottom;
+   }
+   100% {
+     transform: rotate(0deg);
+     transform-origin: bottom;
+   }
+ }
+ header .illustHat {
+   position: absolute;
+   left: 610px;
+   top: -10px;
+   animation-name: hatAnimation;
+   animation-duration: 1.3s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+ }
+ .scroll {
+   text-align: center;
+   margin-bottom: 80px;
+   color: red;
+ }
+ main {
+   text-align: left;
+ }
+ .none {
+  display: none;
+ }
+ .kijiSec {
+   position: relative;
+   margin-bottom: 50px;
+ }
+ .kijiSec h3 {
+   position: absolute;
+   left: 250px;
+   top: 110px;
+ }
+ .kijiSec .kiji {
+   position: absolute;
+   left: 350px;
+   top: 230px;
+   font-size: 25px;
+   color: #ffffff;
+ }
+ .kijiSec .kijiPic img {
+   display: block;
+   width: 80%;
+   height: 50%;
+   margin-left: auto;
+   margin-right: 0;
+ }
+.syokkanSec {
+  position: relative;
+}
+.syokkanSec h3 {
+  position: absolute;
+  right: 250px;
+  top: 110px;
+}
+.syokkanSec .syokkan {
+  position: absolute;
+  right: 350px;
+  top: 230px;
+  font-size: 25px;
+}
+ .syokkanSec .syokkanPic img {
+   display: block;
+   width: 80%;
+   height: 50%;
+ }
+ .ajitukeSec {
+   position: relative;
+ }
+ .ajitukeSec div h3 {
+   position: absolute;
+   left: 240px;
+   top: 110px;
+ }
+ .ajitukeSec div .ajituke {
+   position: absolute;
+   left: 340px;
+   top: 230px;
+   font-size: 25px;
+ }
+ .ajitukeSec div .ajitukePic img {
+   display: block;
+   width: 45%;
+   height: 50%;
+   margin-left: auto;
+ }
+ .ajitukeSec div {
+   background: #c59710;
+   margin-top: 80px;
+   margin-left: 280px;
+   margin-bottom: 120px;
+ }
+ .kodawariSec::before {
+   content: url(./images/kodawari_partition.png);
+   width: 100%;
+   background: #ac1705;
+   display: block;
+   overflow: hidden;
+ }
+ .kodawariSec .kodawariDiv {
+   display: flex;
+   position: relative;
+   background-color: #ffffff;
+ }
+ .kodawariSec .kodawariDiv p img {
+   margin-top: 100px;
+   margin-bottom: 100px;
+   padding-left: 80px;
+ }
+ .kodawariSec .kodawariDiv div h3 img {
+   margin-top: 100px;
+   margin-bottom: 40px;
+ }
+ .kodawariSec .kodawariDiv div .kodawari1 {
+   font-size: 20px;
+   font-weight: bold;
+   line-height: 40px;
+   margin-bottom: 40px;
+   padding-right: 130px;
+ }
+ .kodawariSec .kodawariDiv div .kodawari2 {
+   font-size: 20px;
+   line-height: 40px;
+   font-weight: bold;
+ }
+ .kodawariSec .kodawariDiv div .kodawariImg {
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+ }
+ .kodawariSec .kodawariDiv div .kodawari2 span {
+   color: red;
+ }
+ .kodawariSec::after {
+   content: url(./images/kodawari_partition.png);
+   width: 100%;
+   background: #ac1705;
+   display: block;
+   transform: rotate(180deg);
+ }
+ .product {
+   text-align: center;
+   font-size: 45px;
+   font-weight: bold;
+   line-height: 35px;
+   color: #ffffff;
+   margin-top: 80px;
+ }
+ .product span {
+   font-size: 20px;
+ }
+ .chiliSec .chiliDiv {
+   display: flex;
+   background: #ffffff;
+   margin: 120px 120px 120px 120px;
+ }
+ .chiliSec .chiliDiv p picture img {
+   margin-top: -80px;
+   margin-left: 100px;
+ }
+ .chiliSec .chiliDiv div h3 {
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: 120px;
+ }
+ .chiliSec .chiliDiv div h3 em {
+   font-size: 50px;
+   font-family: 'Noto Sans JP';
+ }
+ .chiliSec .chiliDiv div p {
+   font-size: 20px;
+   line-height: 40px;
+   font-weight: bold;
+   margin-top: 20px;
+ }
+ .chiliSec .chiliDiv div p a {
+   background-color: #e02212;
+   color: #ffffff;
+   display: block;
+   width: 70%;
+   padding: 10px 15px 10px 15px;
+ }
+ .chiliSec .chiliDiv div p a span {
+   color: #f1cf65;
+ }
+ .chiliSec .chiliDiv div p a:hover {
+  background-color: #e98f5f;
+  transition: all 0ms linear 100ms;
+}
+ .truffleSec .truffleDiv {
+   display: flex;
+   background: #c59710;
+   margin: 0 120px 120px 120px;
+ }
+ .truffleSec .truffleDiv p picture img {
+   margin-top: -80px;
+ }
+ .truffleSec .truffleDiv div h3 {
+   font-size: 20px;
+   font-weight: bold;
+   color: #ffffff;
+   margin-top: 150px;
+   margin-left: 60px;
+ }
+ .truffleSec .truffleDiv div h3 b {
+   font-size: 50px;
+   font-family: 'Noto Sans JP';
+ }
+ .truffleSec .truffleDiv div p {
+   font-size: 20px;
+   line-height: 40px;
+   font-weight: bold;
+   color: #ffffff;
+   margin-top: 30px;
+   margin-left: 60px;
+ }
+ .truffleSec .truffleDiv div p a {
+   background-color: #e02212;
+   color: #ffffff;
+   display: block;
+   width: 55%;
+   padding: 10px 15px 10px 15px;
+ }
+ .truffleSec .truffleDiv div p a span {
+   color: #f1cf65;
+ }
+ .truffleSec .truffleDiv div p a:hover {
+   background-color: #e98f5f;
+   transition: all 0ms linear 100ms;
+ }
+ .historySec::before {
+   content: url(./images/kodawari_partition.png);
+   width: 100%;
+   background-color: #ac1705;
+   display: block;
+   overflow: hidden;
+   margin-bottom: 8px;
+ }
+ .historySec .historyDiv {
+   position: relative;
+   display: flex;
+   background-color: #ffffff;
+ }
+ .historySec .historyDiv div {
+   text-align: center;
+   flex-basis: 50%;
+ }
+ .historySec .historyDiv div h2 {
+   position: absolute;
+   left: 320px;
+   top: 370px;
+   font-size: 40px;
+   font-weight: bold;
+   line-height: 22px;
+   color: #e02212;
+ }
+ .historySec .historyDiv div h2 span {
+   font-size: 15px;
+ }
+ .historySec .historyDiv div p {
+   margin-top: 190px;
+   margin-left: 110px;
+   font-size: 18px;
+   font-weight: bold;
+   line-height: 35px;
+ }
+ .historySec .historyDiv div .history1 {
+   margin-top: 135px;
+   margin-left: 100px;
+ }
+ .historySec .historyDiv .historyImg {
+   flex-basis: 50%;
+   margin: 75px 100px 0 30px;
+ }
+ .historySec .historyDiv .historyImg img {
+   max-width: 100%;
+ }
+ .historySec .historyDiv div h3 {
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: 30px;
+   margin-left: -190px;
+ }
+ .historySec .historyDiv div .history2 {
+   text-align: left;
+   margin-top: 5px;
+   margin-left: 30px;
+   margin-right: 80px;
+   margin-bottom: 80px;
+   font-size: 12px;
+   font-weight: 25;
+ }
+ .historySec::after {
+   content: url(./images/kodawari_partition.png);
+   width: 100%;
+   background-color: #ac1705;
+   display: block;
+   transform: rotate(180deg);
+   margin-bottom: 80px;
+ }
+ nav ul {
+   display: flex;
+   justify-content: center;
+ }
+ nav ul li {
+   flex-basis: 50%;
+   max-width: 380px;
+ }
+ nav ul li a {
+   background-color: black;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: bold;
+   display: block;
+   padding: 20px 0 20px 0;
+ }
+ nav ul li a:hover {
+   background-color: #987e7e;
+   transition: all 0ms linear 100ms;
+ }
+ nav ul li .shopInfo:hover {
+   background-color: #f6dbdb;
+   transition: all 0ms linear 100ms;
+ }
+ nav ul li .shopInfo {
+   position: relative;
+   background-color: #ffffff;
+   color: #e02212;
+   margin-left: 30px;
+ }
+ nav ul li .shopInfo::after {
+   content: url(./images/icon_online_r.png);
+   position: absolute;
+   right: 7%;
+   top: 24%;
+ }
+ footer {
+   text-align: center;
+ }
+ footer p img {
+   margin-top: 80px;
+   width: 250px;
+ }
+ footer .copyright {
+   color: #ffffff;
+   margin-top: 80px;
+   margin-bottom: 30px;
+ }
+
+ @media screen and (max-width:640px) {
+   body {
+     background: ;
+   }
+   header h1 picture img {
+     width: 100%;
+   }
+   header .koikeyaLogo {
+     left: 40px;
+     top: 0;
+   }
+   header .illustHat {
+     left: 165px;
+     top: 15px;
+   }
+   .scroll {
+     display: none;
+   }
+   .kijiSec h3 {
+     left: 150px;
+     top: 380px;
+   }
+   .kijiSec h3 img {
+     width: 100%;
+   }
+   .kijiSec .kiji {
+     left: 30px;
+     top: 445px;
+     font-size: 18px;
+     line-height: 30px;
+   }
+   .kijiSec .kijiPic img {
+     width: 100%;
+     margin-top: -15px;
+     margin-bottom: 220px;
+   }
+   .syokkanSec h3 {
+     left: 150px;
+     top: 380px;
+   }
+   .syokkanSec .syokkan {
+     position: static;
+     font-size: 18px;
+     margin: -90px 0 0 30px;
+     color: #ffffff;
+     line-height: 30px;
+   }
+   .syokkanSec .syokkanPic img { 
+     width: 100%;
+     margin-bottom: 180px;
+   }
+   .ajitukeSec div {
+     background-color: #ac1705;
+     margin-left: 0;
+     margin-bottom: 40px;
+   }
+   .ajitukeSec div h3 {
+     left: 130px;
+     top: 380px;
+   }
+   .ajitukeSec div .ajituke {
+     position: static;
+     font-size: 18px;
+     color: #ffffff;
+     margin: 90px 20px 0 30px;
+   }
+   .ajitukeSec div .ajitukePic img {
+     background-color: #c59710;
+     width: 100%;
+   }
+   .kodawariSec .kodawariDiv  {
+     display: block;
+   }
+   .kodawariSec .kodawariDiv p img {
+     width: 100%;
+     margin: 30px 0 0 0;
+     padding-left: 0;
+  }
+  .kodawariSec .kodawariDiv div h3 img {
+    max-width: 100%;
+    margin-top: 10px;
+    padding-left: 60px;
+  }
+  .kodawariSec .kodawariDiv div .kodawari1 {
+    font-size: 18px;
+    padding: 0 25px;
+    margin: -30px 0 0 0;
+    line-height: 25px;
+  }
+  .kodawariSec .kodawariDiv div .kodawari2 {
+    font-size: 18px;
+    padding: 0 25px;
+    margin: 30px 0 0 0;
+    line-height: 25px;
+  }
+  .kodawariSec .kodawariDiv div .kodawariImg {
+    display: none;
+  }
+  .product {
+    margin-top: 45px;
+    font-size: 30px;
+  }
+  .product span {
+    font-size: 16px;
+  }
+  .chiliSec .chiliDiv {
+    text-align: center;
+    display: block;
+    margin: 80px 20px 0 20px;
+    padding-bottom: 20px;
+  }
+  .chiliSec .chiliDiv p picture img {
+    max-width: 100%;
+    margin: -80px 0 0 0;
+  }
+  .chiliSec .chiliDiv div h3 {
+    font-size: 16px;
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+  .chiliSec .chiliDiv div h3 em {
+    font-size: 30px;
+  }
+  .chiliSec .chiliDiv div p {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 20px;
+    line-height: 2;
+  }
+  .chiliSec .chiliDiv div p a {
+    margin: 10px 0 20px 45px;
+    padding: 5px 10px;
+  }
+  .truffleSec .truffleDiv {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 80px 20px 0 20px;
+    padding-top: 140px;
+    padding-bottom: 20px;
+  }
+  .truffleSec .truffleDiv p picture img {
+    max-width: 100%;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+  }
+  .truffleSec .truffleDiv div h3 {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .truffleSec .truffleDiv div h3 b {
+    font-size: 30px;
+  }
+  .truffleSec .truffleDiv div p {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .truffleSec .truffleDiv div p a {
+    margin: 10px 0 20px 45px;
+    padding: 5px 10px;
+    width: 70%;
+  }
+  .historySec::before {
+    margin-top: 40px;
+  }
+  .historySec .historyDiv {
+    display: block;
+  }
+  .historySec .historyDiv div {
+  }
+  .historySec .historyDiv div h2 {
+    font-size: 30px;
+    left: 130px;
+    top: 0;
+    margin-top: 40px;
+  }
+  .historySec .historyDiv div h2 span {
+    font-size: 16px;
+  }
+  .historySec .historyDiv div p {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  .historySec .historyDiv div .historyLogo {
+    display: none;
+  }
+  .historySec .historyDiv div .history1 {
+    margin: 0 20px 0 20px;
+    padding-top: 120px;
+    font-size: 16px;
+    line-height: 2;
+  }
+  .historySec .historyDiv .historyImg {
+    margin: 30px 20px 0 20px;
+  }
+  .historySec .historyDiv div h3 {
+    margin-left: -20px;
+    font-size: 14px;
+  }
+  .historySec .historyDiv div .history2 {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+  .historySec::after {
+    margin-bottom: 0;
+  }
+  nav ul {
+    display: block;
+    margin-top: 50px;
+  }
+  nav ul li {
+    max-width: 100%;
+  }
+  nav ul li a {
+    margin: 0 15px 20px 15px;
+  }
+  nav ul li .shopInfo {
+    margin-left: 15px;
+  }
+  nav ul li .shopInfo::after {
+  }
+  footer p img {
+    margin-top: 25px;
+  }
+  footer .copyright {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+ }

@@ -1,0 +1,15 @@
+header ul {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+header {
+  background-color:D7EEFF;
+  height: 100px;
+}
+header li {
+  margin: 35px;
+  margin-top: 20px;
+}

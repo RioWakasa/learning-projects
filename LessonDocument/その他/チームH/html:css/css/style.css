@@ -1,0 +1,16 @@
+body {
+  background-color:#D7EEFF ;
+  text-align: center;
+}
+h1 {
+font-size: 50px;
+width: 500px;
+border: 2px solid #C0C0C0;
+border-radius: 50px;
+margin: 150px auto 0 auto;
+padding: 5px 0 5px 0;
+}
+li {
+  font-size: 30px;
+  margin: 30px 30px 30px 30px;
+}

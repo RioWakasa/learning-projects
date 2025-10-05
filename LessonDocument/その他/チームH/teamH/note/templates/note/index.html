@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+{% block content %}
+  <main>
+    <h1>授 業 一 覧</h1>
+    <ul>
+      {% for subject in subjects %}
+        <li><a href='{% url "note:subject" subject.id %}'>{{ subject.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </main>
+{% endblock %}
